@@ -39,15 +39,18 @@ public class ButtonPanel extends JPanel implements Observer {
         JPanel pnlOptions = new JPanel(new FlowLayout(FlowLayout.LEADING));
         pnlOptions.setBorder(BorderFactory.createTitledBorder(" Options "));
         pnlAlign.add(pnlOptions);
-
+        
+        //Button to create new game
         btnNew = new JButton("New");
         btnNew.setFocusable(false);
         pnlOptions.add(btnNew);
-
+        
+        //Button to correct
         btnCheck = new JButton("Check");
         btnCheck.setFocusable(false);
         pnlOptions.add(btnCheck);
-
+        
+        //Button to exit
         btnExit = new JButton("Exit");
         btnExit.setFocusable(false);
         pnlOptions.add(btnExit);
