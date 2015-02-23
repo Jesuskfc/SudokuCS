@@ -1,11 +1,11 @@
-package view;
+package com.grupo6.Sudoku.view;
 
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
-import controller.ButtonController;
-import controller.SudokuController;
-import model.Game;
+import com.grupo6.Sudoku.controller.ButtonController;
+import com.grupo6.Sudoku.controller.SudokuController;
+import com.grupo6.Sudoku.model.Game;
 
 /**
  * Main class of program.

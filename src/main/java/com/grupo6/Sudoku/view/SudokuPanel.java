@@ -1,4 +1,4 @@
-package view;
+package com.grupo6.Sudoku.view;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -6,9 +6,9 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import controller.SudokuController;
-import model.Game;
-import model.UpdateAction;
+import com.grupo6.Sudoku.controller.SudokuController;
+import com.grupo6.Sudoku.model.Game;
+import com.grupo6.Sudoku.model.UpdateAction;
 
 /**
  * This class draws the sudoku panel and reacts to updates from the model.

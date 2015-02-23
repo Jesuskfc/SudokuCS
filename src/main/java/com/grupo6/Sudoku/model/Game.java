@@ -1,4 +1,4 @@
-package model;
+package com.grupo6.Sudoku.model;
 
 import java.util.ArrayList;
 import java.util.Collections;

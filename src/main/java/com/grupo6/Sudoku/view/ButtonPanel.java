@@ -1,4 +1,4 @@
-package view;
+package com.grupo6.Sudoku.view;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -12,8 +12,8 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
-import controller.ButtonController;
-import model.UpdateAction;
+import com.grupo6.Sudoku.controller.ButtonController;
+import com.grupo6.Sudoku.model.UpdateAction;
 
 /**
  * This class draws the button panel and reacts to updates from the model.
