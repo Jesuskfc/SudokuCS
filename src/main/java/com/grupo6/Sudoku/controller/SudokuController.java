@@ -1,14 +1,14 @@
-package controller;
+package com.grupo6.Sudoku.controller;
 
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
-import model.Game;
-import model.UpdateAction;
-import view.Field;
-import view.SudokuPanel;
+import com.grupo6.Sudoku.model.Game;
+import com.grupo6.Sudoku.model.UpdateAction;
+import com.grupo6.Sudoku.view.Field;
+import com.grupo6.Sudoku.view.SudokuPanel;
 
 /**
  * This class controls all user actions from SudokuPanel.

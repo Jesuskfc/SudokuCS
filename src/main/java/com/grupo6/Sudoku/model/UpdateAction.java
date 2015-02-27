@@ -1,4 +1,4 @@
-package model;
+package com.grupo6.Sudoku.model;
 
 /**
  * Enumeration used to inform observers what to update.

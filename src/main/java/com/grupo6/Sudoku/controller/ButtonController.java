@@ -1,9 +1,9 @@
-package controller;
+package com.grupo6.Sudoku.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
-import model.Game;
+import com.grupo6.Sudoku.model.Game;
 
 /**
  * This class controls all user actions from ButtonPanel.
