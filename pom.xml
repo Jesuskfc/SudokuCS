@@ -52,21 +52,7 @@
                      </goals>
                   </execution>
                </executions>
-            </plugin>
-            <plugin>
-                <groupId>maven</groupId>
-                 <artifactId>maven-simian-plugin</artifactId>
-                 <version>1.6.1</version>
-            </plugin>
-            <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-pmd-plugin</artifactId>
-               <version>3.4</version>
-               <configuration>
-                      <sourceEncoding>utf-8</sourceEncoding>
-                      <targetJdk>1.8</targetJdk>
-               </configuration>
-            </plugin>
+            </plugin>  
         </plugins>
     </build>
     <reporting>
@@ -75,7 +61,7 @@
                 <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
             <version>3.0.0</version>
-            <!-- NOTE: This is a duplication since confguration is not inherited from PluginManagement -->
+            <!-- NOTE: This is a duplication since configuration is not inherited from PluginManagement -->
             <configuration>
                <maxHeap>512</maxHeap>
                <threshold>Default</threshold>
@@ -87,6 +73,27 @@
                <failOnError>false</failOnError>
             </configuration>
             </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-pmd-plugin</artifactId>
+               <version>3.4</version>
+               <configuration>
+                      <sourceEncoding>utf-8</sourceEncoding>
+                      <targetJdk>1.8</targetJdk>
+               </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+             <!--
+            <plugin>
+                <groupId>maven</groupId>
+                 <artifactId>maven-simian-plugin</artifactId>
+                 <version>1.6.1</version>
+            </plugin>
+            -->
         </plugins>
     </reporting>
 </project>
