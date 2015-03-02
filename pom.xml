@@ -26,6 +26,53 @@
                 </configuration>
                 <version>2.5</version>
             </plugin>
+            <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+               <artifactId>findbugs-maven-plugin</artifactId>
+               <version>3.0.0</version>
+               <configuration>
+                  <skip>${skip.findbugs}</skip>
+                  <includeTests>false</includeTests>
+                  <effort>Max</effort><!-- Min, Default, Max -->
+                  <threshold>Low</threshold><!-- High, Default, Low, Ignore -->
+                  <xmlOutput>true</xmlOutput>
+                  <findbugsXmlOutput>true</findbugsXmlOutput>
+                  <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+                  <failOnError>false</failOnError>
+                  <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+                  <excludeFilterFile>${maven.findbugs-exclude-plugin.configLocation}</excludeFilterFile>
+                  <includeFilterFile>${maven.findbugs-include-plugin.configLocation}</includeFilterFile>
+               </configuration>
+               <executions>
+                  <execution>
+                     <id>run-findbugs</id>
+                     <phase>verify</phase>
+                     <goals>
+                        <goal>check</goal>
+                     </goals>
+                  </execution>
+               </executions>
+            </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <!-- NOTE: This is a duplication since confguration is not inherited from PluginManagement -->
+            <configuration>
+               <maxHeap>512</maxHeap>
+               <threshold>Default</threshold>
+               <effort>Default</effort>
+               <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+               <includeTests>false</includeTests>
+               <excludeFilterFile>${maven.findbugs-exclude-plugin.configLocation}</excludeFilterFile>
+               <includeFilterFile>${maven.findbugs-include-plugin.configLocation}</includeFilterFile>
+               <failOnError>false</failOnError>
+            </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
