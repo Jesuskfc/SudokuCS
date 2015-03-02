@@ -53,6 +53,11 @@
                   </execution>
                </executions>
             </plugin>
+            <plugin>
+                <groupId>maven</groupId>
+                 <artifactId>maven-simian-plugin</artifactId>
+                 <version>1.6.1</version>
+            </plugin>
         </plugins>
     </build>
     <reporting>
