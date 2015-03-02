@@ -58,6 +58,15 @@
                  <artifactId>maven-simian-plugin</artifactId>
                  <version>1.6.1</version>
             </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-pmd-plugin</artifactId>
+               <version>3.4</version>
+               <configuration>
+                      <sourceEncoding>utf-8</sourceEncoding>
+                      <targetJdk>1.8</targetJdk>
+               </configuration>
+            </plugin>
         </plugins>
     </build>
     <reporting>
