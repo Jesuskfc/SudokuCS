@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="test_cases/compra.html">compra</a></td></tr>
+<tr><td><a href="test_cases/huella-co2.html">huella-co2</a></td></tr>
+<tr><td><a href="test_cases/login.html">login</a></td></tr>
+<tr><td><a href="test_cases/hotel.html">hotel</a></td></tr>
+<tr><td><a href="test_cases/comprob-err.html">comprob-err</a></td></tr>
+<tr><td><a href="test_cases/info.html">info</a></td></tr>
+<tr><td><a href="test_cases/oficinas.html">oficinas</a></td></tr>
+<tr><td><a href="test_cases/idiomas.html">idiomas</a></td></tr>
+<tr><td><a href="test_cases/mult-trayectos.html">mult-trayectos</a></td></tr>
+<tr><td><a href="test_cases/comprob-err-hotel.html">comprob-err-hotel</a></td></tr>
+<tr><td><a href="test_cases/check-in-err.html">check-in-err</a></td></tr>
+<tr><td><a href="test_cases/registro.html">registro</a></td></tr>
+<tr><td><a href="test_cases/inf-legal.html">inf-legal</a></td></tr>
+<tr><td><a href="test_cases/vuelos-baratos.html">vuelos-baratos</a></td></tr>
+<tr><td><a href="test_cases/gestion-reservas.html">gestion-reservas</a></td></tr>
+<tr><td><a href="test_cases/facturas.html">facturas</a></td></tr>
+<tr><td><a href="test_cases/pagar-avios.html">pagar-avios</a></td></tr>
+<tr><td><a href="test_cases/ayuda.html">ayuda</a></td></tr>
+<tr><td><a href="test_cases/inspirate.html">inspirate</a></td></tr>
+<tr><td><a href="test_cases/wifi.html">wifi</a></td></tr>
+</tbody></table>
+</body>
+</html>
