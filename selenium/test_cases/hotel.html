@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.iberia.com/" />
+<title>hotel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">hotel</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.search-hotels &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=destination</td>
+	<td>Londres, Gran Londres, Reino Unido</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.frm.sb_travel_purpose[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=checkin_monthday</td>
+	<td>value=2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=checkin_year_month</td>
+	<td>label=diciembre '15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='2015-12']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=checkout_monthday</td>
+	<td>label=mié 23</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=checkout_year_month</td>
+	<td>label=enero '16</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.b-selectbox__element.b-selectbox__groupselection</td>
+	<td>label=1 adulto, 0 niños</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Opciones de búsqueda adicionales</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pr_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='hotellist_inner']/div</td>
+	<td>true</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
